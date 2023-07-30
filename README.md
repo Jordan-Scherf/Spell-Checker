@@ -1,2 +1,5 @@
 # Spell-Checker
-This Program is essentially a spell checker against English words that is ran through the console
+This Program is essentially a spell checker against English words. Given a text file, it runs every word against the "usa.txt" file which is the dictionary.
+If it can't find that word within the dictionary, it logs it and then continues to the next word until it's done reading the whole program, then it goes back and looks at every word that is misspelled or doesn't exist in the dictionary and gives advice on what word you might have meant to spell instead. 
+I originally did this with a vector storing the dictionary but I wanted to see how the runtime can be shortened with a hashmap instead, and oh boy was it faster. After the program is run, it displays the time it took to run, run them both on the same text file to see the different. 
+To run both "main map.cpp" & "mainVec.cpp" compile them using "g++ [.cpp filename] then run it using "./a.out [.cpp filename]. Go ahead and add your own words to the dictionary as well and try out new text files! Any issues/bugs, go ahead and leave a comment!
